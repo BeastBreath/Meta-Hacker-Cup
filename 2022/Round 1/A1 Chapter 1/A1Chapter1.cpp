@@ -14,10 +14,9 @@ int main() {
         bool works = true;
         int N, K;
         cin >> N >> K;
-        int initial_order[N*2];
+        int initial_order[N];
         for (int i = 0; i < N; i++) {
             cin >> initial_order[i];
-            initial_order[i+N] = initial_order[i];
         }
         int firstNumber, startIndex;
         cin >> firstNumber;
@@ -29,10 +28,10 @@ int main() {
         }
         int currentIndex = startIndex;
         for (int i = 1; i < N; i++) {
-            currentIndex ++;
+            currentIndex++;
             int nextNumber;
             cin >> nextNumber;
-            if (initial_order[currentIndex] != nextNumber) {
+            if (initial_order[currentIndex % N] != nextNumber) {
                 works = false;
             }
         }
