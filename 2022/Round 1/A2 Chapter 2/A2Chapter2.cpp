@@ -7,7 +7,9 @@ using namespace std;
 
 int T, N, K;
 
-
+int search(int original[], int newOrder[], int q) {
+    
+}
 
 
 int main() {
