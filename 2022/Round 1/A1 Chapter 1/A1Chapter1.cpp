@@ -36,7 +36,7 @@ int main() {
                 works = false;
             }
         }
-        if (works && K >= 1 && !(K == 1 && startIndex == 0)) {
+        if (works && (K >= 1 || startIndex == 0) && !(K == 1 && startIndex == 0)) {
             cout << "Case #" << t << ": YES"<< endl;
         }
         else {
