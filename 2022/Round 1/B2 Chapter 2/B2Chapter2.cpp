@@ -13,9 +13,9 @@ int main() {
     int T, N, Q;
     double A, B, X1, Y1;
     double p = 1000000007;
-    int* X = new int[1000000001];
-    int* Y = new int[1000000001];
-    int sizeOfGrid = 3001;
+    double* X = new double[1000000001];
+    double* Y = new double[1000000001];
+    int sizeOfGrid = 1000000001;
 
     freopen("B2Chapter2in.txt", "r", stdin);
     freopen("B2Chapter2out.txt", "w", stdout);
