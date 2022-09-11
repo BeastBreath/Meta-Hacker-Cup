@@ -5,9 +5,6 @@
 
 using namespace std;
 
-
-
-
 int main() {
 
     int T, N, Q;
@@ -36,15 +33,6 @@ int main() {
                 X[j] = (X[j] + (A - j)*(A - j)) % p;
                 Y[j] = (Y[j] + (B- j)*(B - j)) % p;
             }
-            /*
-            for (int m = 0; m < 10; m++) {
-                cout << X[m] << " ";
-            }
-            cout << endl;
-            for (int n = 0; n < 10; n++) {
-                cout << Y[n] << " ";
-            }
-            cout << endl;*/
         }
 
         for (int i = 0; i < sizeOfGrid; i++) {
@@ -65,7 +53,6 @@ int main() {
             newInconvenience += Y[Y1];
             newInconvenience %= p;
             total = (total + newInconvenience) % p;
-            //cout << "incon: " << t << " " << X[X1] + Y[Y1] << endl;
         }
         cout << fixed << "Case #" << t << ": " << (int)total << endl;
     }
