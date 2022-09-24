@@ -1,3 +1,9 @@
+/*
+Submitted after the competition
+Missed one corner case (all the cards are the same and K = 1)
+Messed up one (N = 2 and K is odd)
+*/
+
 #include <bits/stdc++.h>
 #include <iostream>
 #include <cstdio>
